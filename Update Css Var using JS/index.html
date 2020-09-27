@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating CSS Variables</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h2>Update CSS Variable with <span class="set-color">JS</span> </h2>
+    <div class="controls">
+        <div class="spacing-controls">
+            <label for="spacing">Spacing :</label>
+            <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
+        </div>
+
+        <div class="blur-controls">
+            <label for="blur">Blur :</label>
+            <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+        </div>
+
+        <div class="color-controls">
+            <label for="base">Base-Color :</label>
+            <input type="color" name="base" value="#333">
+        </div>
+    </div>
+    <div class="image-area"><img src="bg_img.jpg" alt=""></div>
+
+
+    <!-- JS file -->
+    <script src="app.js"></script>
+</body>
+</html>
